@@ -1,0 +1,1 @@
+Stromrechner - Electricity Cost Calculator with comprehensive test coverage for Layers 1 and 2.
