@@ -23,8 +23,8 @@ describe('Calculator', () => {
     fireEvent.click(screen.getByRole('button', { name: /calculate/i }));
     
     expect(screen.getByTestId('results')).toBeInTheDocument();
-    expect(screen.getByTestId('annual-cost')).toHaveTextContent('1.225,00 EUR');
-    expect(screen.getByTestId('monthly-cost')).toHaveTextContent('102,08 EUR');
+    expect(screen.getByTestId('annual-cost')).toHaveTextContent(/1.225,00 EUR/);
+    expect(screen.getByTestId('monthly-cost')).toHaveTextContent(/102,08 EUR/);
   });
 
   it('disables calculate button when consumption is zero', () => {
