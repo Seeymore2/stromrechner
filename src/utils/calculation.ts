@@ -47,9 +47,12 @@ export function calculateAnnualCost(input: CalculationInput): CalculationResult 
 }
 
 export function formatGermanCurrency(amount: number): string {
-  return amount.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+(,\d+)?$)/g, '$1.');
+  return new Intl.NumberFormat('de-DE', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  }).format(amount);
 }
 
 export function formatGermanNumber(num: number): string {
-  return num.toString().replace('.', ',').replace(/(\d)(?=(\d{3})+(,\d+)?$)/g, '$1.');
+  return new Intl.NumberFormat('de-DE').format(num);
 }
