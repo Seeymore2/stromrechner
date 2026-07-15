@@ -9,7 +9,7 @@ describe('calculateAnnualCost', () => {
     
     expect(result.annualCost).toBe(1225);
     expect(result.monthlyCost).toBeCloseTo(102.08);
-    expect(result.dailyCost).toBeCloseTo(3.35);
+    expect(result.dailyCost).toBeCloseTo(3.36);
   });
 
   it('handles edge case: zero consumption', () => {
