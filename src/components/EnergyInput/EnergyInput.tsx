@@ -6,7 +6,6 @@ interface EnergyInputProps {
   label?: string;
   min?: number;
   max?: number;
-  step?: number;
 }
 
 const EnergyInput: React.FC<EnergyInputProps> = ({
@@ -15,7 +14,6 @@ const EnergyInput: React.FC<EnergyInputProps> = ({
   label = 'Annual Consumption (kWh)',
   min = 0,
   max = 100000,
-  step = 1,
 }) => {
   const [inputValue, setInputValue] = useState<string>(value.toString());
   const [error, setError] = useState<string | null>(null);
@@ -83,7 +81,8 @@ const EnergyInput: React.FC<EnergyInputProps> = ({
       <div className="hint">
         German format: 1.234,56 kWh
       </div>
-    </div>
+  
+  </div>
   );
 };
 
