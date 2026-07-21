@@ -1,3 +1,5 @@
+url: https://raw.githubusercontent.com/Seeymore2/stromrechner/main/src/components/EnergyInput/EnergyInput.tsx
+
 import React, { useState, useEffect } from 'react';
 
 interface EnergyInputProps {
