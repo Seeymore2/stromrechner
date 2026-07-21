@@ -1,4 +1,4 @@
-url: https://raw.githubusercontent.com/Seeymore2/stromrechner/main/src/components/EnergyInput/EnergyInput.tsx
+url: https://raw.githubusercontent.com/Seeymore2/stromrechner/0200322813fe4c18bc48ed404889250785de882c/src/components/EnergyInput/EnergyInput.tsx
 
 import React, { useState, useEffect } from 'react';
 
@@ -88,4 +88,5 @@ const EnergyInput: React.FC<EnergyInputProps> = ({
   );
 };
 
-export default EnergyInput;
+export defa
+ult EnergyInput;
